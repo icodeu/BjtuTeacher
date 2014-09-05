@@ -19,7 +19,12 @@
 	$result = mysql_query("SELECT COUNT(*) FROM teacher WHERE teaName='$teaName'");
 	$row = mysql_fetch_array($result);
 	if($row[0]==0){//该教师第一次被祝福
-		mysql_query("INSERT INTO teacher(teaName, flower, card, tea, total) VALUES ('$teaName', 0, 0, 0, 0)") or die(mysql_error());
+		if($gift == "flower")
+			mysql_query("INSERT INTO teacher(teaName, flower, card, tea, total) VALUES ('$teaName', 1, 0, 0, 1)") or die(mysql_error());
+		else if($gift == "card")
+			mysql_query("INSERT INTO teacher(teaName, flower, card, tea, total) VALUES ('$teaName', 0, 1, 0, 1)") or die(mysql_error());
+		else if($gift == "tea")
+			mysql_query("INSERT INTO teacher(teaName, flower, card, tea, total) VALUES ('$teaName', 0, 0, 1, 1)") or die(mysql_error());
 	}else{//该教师之前被祝福过 更新相应数据
 		$result = mysql_query("SELECT * FROM teacher WHERE teaName='$teaName'");
 		$row = mysql_fetch_array($result);
