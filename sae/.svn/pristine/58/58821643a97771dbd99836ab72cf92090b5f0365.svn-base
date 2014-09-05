@@ -19,11 +19,9 @@
 			echo '<center><h3>'.$teaName.'老师收到的祝福'.'<span class="label label-default">'.$count_row[0].'</span></h3></center>';
 			$result = mysql_query("select * from student where teaName = '$teaName'");
 			$i = 0;
-			$comment_flag = false;
 			while ($row = mysql_fetch_array($result)){
 				if($row['comment']=='')
 					break;
-				$comment_flag = true;
 				if ($i%5==0)
 					echo '<div class="panel panel-success">';
 				else if($i%5==1)
@@ -44,9 +42,6 @@
 						.'</div>
 					</div>';
 				$i++;
-			}
-			if($comment_flag==false){
-				echo "暂时没收到文字祝福~";
 			}	
     	?>    	
 
