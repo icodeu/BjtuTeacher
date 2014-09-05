@@ -18,13 +18,14 @@
 		$i = 1;
         while ($row = mysql_fetch_array($result))
         {
+        	$viewName = $row['teaName'];
         	if($i<4){
 				echo '<tr class="danger">';
-	            echo '<td>'.$row['teaName'].'</td>'.'<td>'.$row['flower'].'</td>'.'<td>'.$row['card'].'</td>'.'<td>'.$row['tea'].'</td>'.'<td>'.$row['total'].'</td>';
+	            echo '<td>'.'<a href=view.php?teaName='.$viewName.'>'.$row['teaName'].'</a>'.'</td>'.'<td>'.$row['flower'].'</td>'.'<td>'.$row['card'].'</td>'.'<td>'.$row['tea'].'</td>'.'<td>'.$row['total'].'</td>';
 	            echo "</tr>";
 			}else{
 				echo '<tr>';
-	            echo '<td>'.$row['teaName'].'</td>'.'<td>'.$row['flower'].'</td>'.'<td>'.$row['card'].'</td>'.'<td>'.$row['tea'].'</td>'.'<td>'.$row['total'].'</td>';
+	            echo '<td>'.'<a href=view.php?teaName='.$viewName.'>'.$row['teaName'].'</td>'.'<td>'.$row['flower'].'</td>'.'<td>'.$row['card'].'</td>'.'<td>'.$row['tea'].'</td>'.'<td>'.$row['total'].'</td>';
 	            echo "</tr>";
 			}
         }
