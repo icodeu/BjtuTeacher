@@ -7,10 +7,10 @@
 </head>
 <body>
 <?php
-	$stuName = $_GET['stuName'];
-	$teaName = $_GET['teaName'];
-	$gift = $_GET['gift'];
-	$comment = $_GET['comment'];
+	$stuName = $_POST['stuName'];
+	$teaName = $_POST['teaName'];
+	$gift = $_POST['gift'];
+	$comment = $_POST['comment'];
 	include 'mysql_connect.php';
 	//插入student的表
 	mysql_query("insert into student (stuName, teaName, gift, comment) values ('$stuName', '$teaName', '$gift', '$comment')") or die(mysql_error());
@@ -47,7 +47,7 @@
 	}
 	echo "<script language='javascript' type='text/javascript'>";
 	echo '
-			var index_url = "index.php";
+			var index_url = "rank.php?teaName='.$teaName.'&gift='.$gift.'";
 			window.location.href = index_url;
 		';
 	echo "</script>";

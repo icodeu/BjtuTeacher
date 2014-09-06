@@ -1,0 +1,15 @@
+.btn_music {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: url("http://wxfile.2sky.cn/card3/img/play.png") no-repeat center center;
+    background-size: 100% auto;
+    position: absolute;
+    z-index: 100;
+    right: 15px;
+    top: 14px;
+}
+
+.btn_music.on {
+    background-image: url("http://wxfile.2sky.cn/card3/img/stop.png");
+}
