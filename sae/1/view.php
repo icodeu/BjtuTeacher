@@ -40,7 +40,7 @@
 							$row['stuName']
 						.'</div>
 						<div class="panel-body">'.
-							$row['teaName']
+							$row['comment']
 						.'</div>
 					</div>';
 				$i++;
