@@ -49,7 +49,12 @@
 				echo "暂时没收到文字祝福~";
 			}	
     	?>    	
+    	<input type="text" name="teaName" id="teaName" value="<?php echo $teaName ?>" hidden="hidden"/>
 
 	</div>
 </body>
+<script type="text/javascript" charset="utf-8">
+			var teacher = document.getElementById('teaName').value;
+		  	document.title = "交大的同学们：我送给 " + teacher + " 老师一份祝福，快来帮助老师上头条吧！";
+</script>
 </html>
