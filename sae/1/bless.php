@@ -40,8 +40,10 @@
 		  }
 	</script>
 	<style type="text/css">
-	  .line{background-color: transparent;border-left-style: none;border-right-style: none;border-top-style: none; color: #FFFF00;font-weight:bolder;}
+	  .line{background-color: transparent;border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-color: #000609;    color: #FFFF00;font-weight:bolder;font-size: xx-large;}
+/*	  .line{background-color: transparent; }*/
 	  /*.textareabg{background-image: url(images/textarea_bg_new.png);background-repeat: no-repeat;}*/
+	 .myspan{font-weight: bolder; color: #3D00F5; font-size: larger;}
 	  	#sharemcover0 img {
 	    position: fixed;
 	    right: 0;
@@ -69,11 +71,11 @@
 			<!--<center><img src="images/bless_title.png" width="300"/></center>-->
 				
 			<form action="save.php" method="post" onsubmit="return doCheck()" name="register">
-			  我是
-			  <input type="text" name="stuName" id="stuName" size="8" class="line"/><br /><br />
-			  祝福我的老师
-			  <input type="text" name="teaName" id="teaName" size="8" class="line"/><br /><br />
-			  送给我的老师<br />
+			  <span class="myspan">我是【</span>
+			  <input type="text" name="stuName" id="stuName" size="5" class="line"/><span class="myspan">】</span><br /><br />
+			  <span class="myspan">祝福我的老师【</span>
+			  <input type="text" name="teaName" id="teaName" size="5" class="line"/><span class="myspan">】</span><br /><br />
+			  <span class="myspan">送给我的老师</span><br />
 			  <input type="radio" name="gift" value="flower"  checked="checked"/> 一朵鲜花<img src="images/flower.png" width="30"/>&nbsp;&nbsp;&nbsp;&nbsp;
 			  <input type="radio" name="gift" value="card"/> 一张贺卡<img src="images/card.png" width="40"/><br />
               <input type="radio" name="gift" value="tea"/> 一杯润喉茶<img src="images/tea.png" width="40"/><br /><br />
