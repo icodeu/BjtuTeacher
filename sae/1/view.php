@@ -8,6 +8,7 @@
 </head>
 
 <body background="images/rank_bg.png">
+	<img src="images/logo.png" width="1"/>
     <div class="container">
     	<center><img src="images/rank_title.png" width="300"/></center>
     	

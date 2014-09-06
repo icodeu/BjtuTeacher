@@ -22,6 +22,7 @@
 	    z-index: 20001;}
 	</style>
 	<body>
+		<img src="images/logo.png" width="1"/>
 		<!--<span id="playbox" class="btn_music on" onClick="playbox.play();return false;">
    			<!--{<span id="playbox" class="btn_music" onClick="playbox.init(this).play();return false;">}-->
    			<!--<audio src="http://music.2sky.cn/card2/mp3/0/19.m4a" loop id="audio" autoplay="autoplay"></audio>
