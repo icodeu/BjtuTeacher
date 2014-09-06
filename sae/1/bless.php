@@ -72,9 +72,9 @@
 				
 			<form action="save.php" method="post" onsubmit="return doCheck()" name="register">
 			  <span class="myspan">我是【</span>
-			  <input type="text" name="stuName" id="stuName" size="5" class="line"/><span class="myspan">】</span><br /><br />
+			  <input type="text" name="stuName" id="stuName" size="5" class="line"/><span class="myspan">】</span><br />
 			  <span class="myspan">祝福我的老师【</span>
-			  <input type="text" name="teaName" id="teaName" size="5" class="line"/><span class="myspan">】</span><br /><br />
+			  <input type="text" name="teaName" id="teaName" size="5" class="line"/><span class="myspan">】</span><br />
 			  <span class="myspan">送给我的老师</span><br />
 			  <input type="radio" name="gift" value="flower"  checked="checked"/> 一朵鲜花<img src="images/flower.png" width="30"/>&nbsp;&nbsp;&nbsp;&nbsp;
 			  <input type="radio" name="gift" value="card"/> 一张贺卡<img src="images/card.png" width="40"/><br />
