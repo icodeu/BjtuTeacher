@@ -22,7 +22,7 @@
 	    z-index: 20001;}
 	</style>
 	<body>
-		<img src="images/logo.png" width="1"/>
+		
 		<!--<span id="playbox" class="btn_music on" onClick="playbox.play();return false;">
    			<!--{<span id="playbox" class="btn_music" onClick="playbox.init(this).play();return false;">}-->
    			<!--<audio src="http://music.2sky.cn/card2/mp3/0/19.m4a" loop id="audio" autoplay="autoplay"></audio>
@@ -36,8 +36,9 @@
 		<div class="hot" style="position:absolute">
         	<li style="display:inline-block;">送老师祝福，帮你最爱的老师成为校园明星、上头条吧！</li>
     	</div>
+    	<img src="images/logo.png" width="1"/>
 		<div class="container">
-			<br /><br />
+			<br />
 			<center><img src="images/index_title.png" width="300"/></center>
 			
 			<br /><br /><br /><br /><br /><br /><br />
