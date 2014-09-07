@@ -34,7 +34,7 @@ ol, ul, li {
 em {
 	font-style:normal
 }
-label, input, button, textarea {
+label, button, textarea {
 	border:none;
 	vertical-align:middle;
 	
@@ -55,12 +55,7 @@ body {
 	font-size:14px;
 }
 
-a {
-	text-decoration:none;
-	color:#464646;
-	outline:none;
-}
-a, li, input, button {
+li, input, button {
 	outline:none;
 }
 .clr {

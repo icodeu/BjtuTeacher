@@ -40,7 +40,7 @@
 		  }
 	</script>
 	<style type="text/css">
-	  .line{background-color: transparent;border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-color: #000609;    color: #FFFF00;font-weight:bolder;font-size: xx-large;}
+	  /*.line{background-color: transparent;border-left-style: none;border-right-style: none;border-top-style: none;border-bottom-color: #000609;    color: #FFFF00;font-weight:bolder;font-size: xx-large;}*/
 /*	  .line{background-color: transparent; }*/
 	  /*.textareabg{background-image: url(images/textarea_bg_new.png);background-repeat: no-repeat;}*/
 	 .myspan{font-weight: bolder; color: #3D00F5; font-size: larger;}
@@ -57,7 +57,7 @@
    			<audio src="http://music.2sky.cn/card2/mp3/0/19.m4a" loop id="audio" autoplay="autoplay"></audio>
    		</span>
 		<div id="background" style="position:absolute; width:100%; height:100%; z-index:-1">    
-			<img src="images/background.jpg" height="100%" width="100%"/>    
+			<img src="images/bless_bg.jpg" height="100%" width="100%"/>    
 		</div>
 		<div id="sharemcover0" class="sharemcover" onClick="document.getElementById('sharemcover0').style.display='';" style=" display:none">
         	<img src="images/guide.png" style="width:100%;heigth:100%;">
@@ -71,17 +71,17 @@
 			<!--<center><img src="images/bless_title.png" width="300"/></center>-->
 				
 			<form action="save.php" method="post" onsubmit="return doCheck()" name="register">
-			  <span class="myspan">我是【</span>
-			  <input type="text" name="stuName" id="stuName" size="5" class="line"/><span class="myspan">】</span><br />
-			  <span class="myspan">祝福我的老师【</span>
-			  <input type="text" name="teaName" id="teaName" size="5" class="line"/><span class="myspan">】</span><br />
-			  <span class="myspan">送给我的老师</span><br />
+			  我是
+			  <input type="text" name="stuName" id="stuName" size="5"/><br /><br />
+			  祝福我的老师
+			  <input type="text" name="teaName" id="teaName" size="5"/><br /><br />
+			  送给我的老师<br />
 			  <input type="radio" name="gift" value="flower"  checked="checked"/> 一朵鲜花<img src="images/flower.png" width="30"/>&nbsp;&nbsp;&nbsp;&nbsp;
 			  <input type="radio" name="gift" value="card"/> 一张贺卡<img src="images/card.png" width="40"/><br />
               <input type="radio" name="gift" value="tea"/> 一杯润喉茶<img src="images/tea.png" width="40"/><br /><br />
                             留下对老师的祝福:<br />
               <textarea name="comment" rows="2" cols="40"></textarea><br />
-			  <center><input type="submit" value="提交" class="btn btn-success btn-lg" onClick="showGuide()"/></center>
+			  <center><input type="submit" value="提交" class="btn btn-success btn-lg"/></center>
 			</form>
 		</div>
 	</body>

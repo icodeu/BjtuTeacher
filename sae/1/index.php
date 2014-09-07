@@ -42,7 +42,7 @@
 			<center><img src="images/index_title.png" width="300"/></center>
 			
 			<br /><br /><br /><br /><br /><br /><br />
-			<center><a href="bless.php"><img src="images/heart.png" width="120"/></a></center>
+			<center><a href="bless.php"><img src="images/heart_new.png" width="120"/></a></center>
 			
 		<?php
 			$teaName = @$_GET['teaName'];
@@ -57,7 +57,7 @@
 			<input type="text" name="teaName" id="teaName" value="<?php echo $teaName ?>" hidden="hidden"/>
 			<input type="text" name="gift" id="gift" value="<?php echo $gift ?>" hidden="hidden"/>
 			<div class="alert alert-success" role="alert">
-				北京交通大学新闻中心出品：高晓天  王欢 
+				北京交通大学新闻中心出品：王欢  高晓天   
 			</div>
 			
 		</div>
