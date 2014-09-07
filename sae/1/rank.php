@@ -19,7 +19,7 @@
     <div class="container">
     	<center><img src="images/rank_title.png" width="300"/></center>
     	<div class="alert alert-success" role="alert">
-				新闻中心将专访排名靠前的老师。快和同学们一起帮助敬爱的老师上头条吧！  
+				新闻中心将专访排名靠前的老师。快分享至朋友圈，和同学们一起帮助敬爱的老师上头条吧！  
 		</div>
     <?php
     	$teaName = @$_GET['teaName'];
