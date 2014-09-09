@@ -57,7 +57,7 @@
 			<input type="text" name="teaName" id="teaName" value="<?php echo $teaName ?>" hidden="hidden"/>
 			<input type="text" name="gift" id="gift" value="<?php echo $gift ?>" hidden="hidden"/>
 			<div class="alert alert-success" role="alert">
-				北京交通大学新闻中心出品：王欢  高晓天   
+				北京交通大学新闻中心出品：高晓天   王欢  
 			</div>
 			
 		</div>
